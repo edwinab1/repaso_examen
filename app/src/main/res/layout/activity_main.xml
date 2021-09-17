@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="10"
+    android:padding="30dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:text="Login"
+            android:textSize="50dp"
+            android:textColor="@color/textColor"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Email Address"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_below="@+id/tvEmail"
+            android:id="@+id/edtEmail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edtEmail"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Password"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPassword"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/appColor"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Aún no tienes una cuenta?"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvRegisterAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Crear Cuenta"
+            android:textColor="@color/appColor"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

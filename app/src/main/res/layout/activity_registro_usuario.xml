@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="10"
+    android:padding="30dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:text="Create Account"
+            android:textSize="40dp"
+            android:textColor="@color/textColor"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Name"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_below="@id/edtName"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Email Address"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_below="@+id/tvEmail"
+            android:id="@+id/edtEmail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edtEmail"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Password"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassword"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btFecha"
+            android:layout_below="@id/edtPassword"
+            android:text="Seleccione fecha de nacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <TimePicker
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <DatePicker
+            android:id="@+id/dtFecha"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dtFecha"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/appColor"
+            android:text="Create Account"
+            android:textColor="@color/white" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Ya tienes una cuenta?"
+            android:textColor="@color/textColor"
+            android:textSize="18dp" />
+
+
+
+        <TextView
+            android:id="@+id/tvLoginAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/appColor"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
